@@ -26,7 +26,8 @@ from pipeline.component.scorecard import Scorecard
 from pipeline.component.sampler import FederatedSample
 from pipeline.component.scale import FeatureScale
 from pipeline.component.union import Union
-from pipeline.component.secret_sharing_sum import SecretSharingSum
+from pipeline.component.feldman_verifiable_sum import FeldmanVerifiableSum
+
 
 
 __all__ = ["DataStatistics", "DataIO", "Evaluation", "HeteroDataSplit",
@@ -35,5 +36,5 @@ __all__ = ["DataStatistics", "DataIO", "Evaluation", "HeteroDataSplit",
            "HeteroPearson", "HeteroPoisson", "HeteroSecureBoost", "HomoDataSplit",
            "HomoLR", "HomoNN", "HomoSecureBoost", "Intersection",
            "LocalBaseline", "OneHotEncoder", "PSI", "Reader", "Scorecard",
-           "FederatedSample", "FeatureScale", "Union", "ColumnExpand", "SecretSharingSum"]
+           "FederatedSample", "FeatureScale", "Union", "ColumnExpand", "FeldmanVerifiableSum"]
 
